@@ -1,0 +1,86 @@
+/* Function */
+@function pxtorem($px) {
+  @return $px / 16px * 1rem;
+}
+
+/* Primary colors */
+$sand: #e9e2cf;
+$skogsgron: #465c3e;
+$greige: #ad9072;
+
+/*Secondary color*/
+$tradstam: #96612e;
+
+/* Hover colors */
+$lovgron: #707e43;
+$morkbrun: #5a3b1f;
+
+/* Fonts */
+$heading-font: "Lilita One", sans-serif;
+$body-font: "Assistant", sans-serif;
+
+/* Default spacing */
+$spacing: 25px;
+
+/* Buttons */
+@mixin primary-button {
+  display:block;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 150px;
+  min-height: 45px;
+  border: none;
+  border-radius: 7px;
+  background-color: $skogsgron;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $sand;
+  font-family: $body-font;
+  font-weight: bold;
+  font-size: pxtorem(16px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+
+  &:hover {
+    background-color: $lovgron;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+}
+
+@mixin secondary-button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 150px;
+  min-height: 45px;
+  border: none;
+  border-radius: 7px;
+  background-color: $tradstam;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $sand;
+  font-family: $body-font;
+  font-weight: bold;
+  font-size: pxtorem(16px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+
+  &:hover {
+    background-color: $morkbrun;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+}

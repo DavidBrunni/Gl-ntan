@@ -1,0 +1,20 @@
+{
+  "name": "Gläntan",
+  "short_name": "Gläntan",
+  "start_url": "/fed24d-grafiska-verktyg-panterkameleonterna/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Gläntans hyrstugor",
+  "icons": [
+    {
+      "src": "/fed24d-grafiska-verktyg-panterkameleonterna/pictures/logga.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/fed24d-grafiska-verktyg-panterkameleonterna/pictures/logga.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
